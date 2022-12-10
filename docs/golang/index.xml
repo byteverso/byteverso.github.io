@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on </title>
+    <link>/docs/golang/</link>
+    <description>Recent content in Golang on </description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Re-envio de requisições HTTP em GO</title>
+      <link>/docs/golang/retryhttp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/golang/retryhttp/</guid>
+      <description>Em inúmeras situações as nossas requisições HTTP comunicam-se com API&amp;rsquo;s que recebem um alto volume de tráfego, portanto ás vezes retornando respostas indesejadas, os famosos 5xx.
+Felizmente existe uma biblioteca em Go feito pela Hashicorp chamada go-retryablehttp que pode nos ajudar, observe o exemplo abaixo :point_down:
+package main import ( &amp;#34;fmt&amp;#34; &amp;#34;log&amp;#34; &amp;#34;time&amp;#34; &amp;#34;github.com/hashicorp/go-retryablehttp&amp;#34; ) func main() { //Cria um novo http client c := retryablehttp.NewClient() //Configura o client para 10 tentativas c.</description>
+    </item>
+    
+  </channel>
+</rss>
