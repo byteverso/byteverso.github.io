@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Docs on BYTEVERSO</title>
-    <link>https://byteverso.com/docs/</link>
+    <link>https://www.byteverso.com/docs/</link>
     <description>Recent content in Docs on BYTEVERSO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>
-</copyright><atom:link href="https://byteverso.com/docs/index.xml" rel="self" type="application/rss+xml" />
+</copyright><atom:link href="https://www.byteverso.com/docs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
 

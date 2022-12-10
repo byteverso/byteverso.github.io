@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://byteverso.com/authors/</loc>
+    <loc>https://www.byteverso.com/authors/</loc>
   </url><url>
-    <loc>https://byteverso.com/categories/</loc>
+    <loc>https://www.byteverso.com/categories/</loc>
   </url><url>
-    <loc>https://byteverso.com/docs/</loc>
+    <loc>https://www.byteverso.com/docs/</loc>
   </url><url>
-    <loc>https://byteverso.com/docs/golang/</loc>
+    <loc>https://www.byteverso.com/docs/golang/</loc>
   </url><url>
-    <loc>https://byteverso.com/</loc>
+    <loc>https://www.byteverso.com/</loc>
   </url><url>
-    <loc>https://byteverso.com/docs/golang/retryhttp/</loc>
+    <loc>https://www.byteverso.com/docs/golang/retryhttp/</loc>
   </url><url>
-    <loc>https://byteverso.com/search/</loc>
+    <loc>https://www.byteverso.com/search/</loc>
   </url><url>
-    <loc>https://byteverso.com/series/</loc>
+    <loc>https://www.byteverso.com/series/</loc>
   </url><url>
-    <loc>https://byteverso.com/tags/</loc>
+    <loc>https://www.byteverso.com/tags/</loc>
   </url>
 </urlset>
