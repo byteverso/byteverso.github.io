@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title></title>
-    <link>/</link>
-    <description>Recent content on </description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <title>Home on BYTEVERSO</title>
+    <link>https://byteverso.com/</link>
+    <description>Recent content in Home on BYTEVERSO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>
+</copyright><atom:link href="https://byteverso.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Re-envio de requisições HTTP em GO</title>
-      <link>/docs/golang/retryhttp/</link>
+      <link>https://byteverso.com/docs/golang/retryhttp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/golang/retryhttp/</guid>
-      <description>Em inúmeras situações as nossas requisições HTTP comunicam-se com API&amp;rsquo;s que recebem um alto volume de tráfego, portanto ás vezes retornando respostas indesejadas, os famosos 5xx.
-Felizmente existe uma biblioteca em Go feito pela Hashicorp chamada go-retryablehttp que pode nos ajudar, observe o exemplo abaixo :point_down:
-package main import ( &amp;#34;fmt&amp;#34; &amp;#34;log&amp;#34; &amp;#34;time&amp;#34; &amp;#34;github.com/hashicorp/go-retryablehttp&amp;#34; ) func main() { //Cria um novo http client c := retryablehttp.NewClient() //Configura o client para 10 tentativas c.</description>
+      <guid>https://byteverso.com/docs/golang/retryhttp/</guid>
+      <description><![CDATA[Em inúmeras situações as nossas requisições HTTP comunicam-se com API&rsquo;s que recebem um alto volume de tráfego, portanto ás vezes retornando respostas indesejadas, os famosos 5xx.
+Felizmente existe uma biblioteca em Go feito pela Hashicorp chamada go-retryablehttp que pode nos ajudar, observe o exemplo abaixo 👇
+package main import ( &#34;fmt&#34; &#34;log&#34; &#34;time&#34; &#34;github.com/hashicorp/go-retryablehttp&#34; ) func main() { //Cria um novo http client c := retryablehttp.NewClient() //Configura o client para 10 tentativas c.]]></description>
     </item>
     
   </channel>
 </rss>
+
