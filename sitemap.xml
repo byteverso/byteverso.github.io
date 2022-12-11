@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.byteverso.com/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.byteverso.com/politica-de-privacidade/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.byteverso.com/posts/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.byteverso.com/authors/</loc>
   </url><url>
     <loc>https://www.byteverso.com/categories/</loc>
@@ -10,9 +19,9 @@
   </url><url>
     <loc>https://www.byteverso.com/docs/golang/</loc>
   </url><url>
-    <loc>https://www.byteverso.com/</loc>
+    <loc>https://www.byteverso.com/faq/</loc>
   </url><url>
-    <loc>https://www.byteverso.com/docs/golang/retryhttp/</loc>
+    <loc>https://www.byteverso.com/docs/golang/go-http-inteligente/</loc>
   </url><url>
     <loc>https://www.byteverso.com/search/</loc>
   </url><url>

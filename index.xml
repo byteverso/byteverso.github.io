@@ -7,13 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>
-</copyright><atom:link href="https://www.byteverso.com/index.xml" rel="self" type="application/rss+xml" />
+</copyright>
+    <lastBuildDate>Thu, 28 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.byteverso.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Politica de privacidade</title>
+      <link>https://www.byteverso.com/politica-de-privacidade/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.byteverso.com/politica-de-privacidade/</guid>
+      <description><![CDATA[Politica de privacidade
+A Byteverso opera o site &ldquo;Byteverso&rdquo; em https://www.byteverso.com. Eu levo sua privacidade a sério. Para melhor proteger sua privacidade, forneço este aviso de política de privacidade explicando como suas informações pessoais são coletadas e usadas.
+Coleta de informações de rotina
+Este site rastreia informações básicas sobre seus visitantes. Essas informações incluem, mas não estão limitadas a, endereços IP, detalhes do navegador, carimbos de data/hora e páginas de referência.]]></description>
+    </item>
+    
     <item>
       <title>Re-envio de requisições HTTP em GO</title>
-      <link>https://www.byteverso.com/docs/golang/retryhttp/</link>
+      <link>https://www.byteverso.com/docs/golang/go-http-inteligente/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.byteverso.com/docs/golang/retryhttp/</guid>
+      <guid>https://www.byteverso.com/docs/golang/go-http-inteligente/</guid>
       <description><![CDATA[Em inúmeras situações as nossas requisições HTTP comunicam-se com API&rsquo;s que recebem um alto volume de tráfego, portanto ás vezes retornando respostas indesejadas, os famosos 5xx.
 Felizmente existe uma biblioteca em Go feito pela Hashicorp chamada go-retryablehttp que pode nos ajudar, observe o exemplo abaixo 👇
 package main import ( &#34;fmt&#34; &#34;log&#34; &#34;time&#34; &#34;github.com/hashicorp/go-retryablehttp&#34; ) func main() { //Cria um novo http client c := retryablehttp.NewClient() //Configura o client para 10 tentativas c.]]></description>
