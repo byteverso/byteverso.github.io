@@ -5,27 +5,32 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.css" media="print" onload="this.media='all'">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Series - BYTEVERSO</title>
+    <title>Re-envio de requisições HTTP em GO - BYTEVERSO</title>
     <link rel="icon" href="https://www.byteverso.com/favicon_hub5539f71f6ca3f4d14bc6a344cab8163_16141_16x16_resize_box_3.png" sizes="16x16" type="image/png">
     <link rel="icon" href="https://www.byteverso.com/favicon_hub5539f71f6ca3f4d14bc6a344cab8163_16141_32x32_resize_box_3.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="https://www.byteverso.com/favicon_hub5539f71f6ca3f4d14bc6a344cab8163_16141_180x180_resize_box_3.png" sizes="180x180" type="image/png">
     <link rel="icon" href="https://www.byteverso.com/favicon_hub5539f71f6ca3f4d14bc6a344cab8163_16141_150x150_resize_box_3.png" sizes="150x150" type="image/png">
     <link rel="icon" href="https://www.byteverso.com/favicon_hub5539f71f6ca3f4d14bc6a344cab8163_16141_192x192_resize_box_3.png" sizes="192x192" type="image/png">
 <link rel="mask-icon" href="https://www.byteverso.com/safari-pinned-tab.svg" color="#6f42c1">
-<meta name="keywords" content="" />
-<meta name="description" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Series"/>
-<meta name="twitter:description" content=""/>
-<meta property="og:title" content="Series" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.byteverso.com/series/" />
+<meta name="keywords" content="Go,, Golang,, HTTP,, request,, response,, reenvio,, programação,, cliente,, GET,, POST" />
+<meta name="description" content="Como fazer as requisições HTTTP serem re-enviadas automáticamente." /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Re-envio de requisições HTTP em GO"/>
+<meta name="twitter:description" content="Como fazer as requisições HTTTP serem re-enviadas automáticamente."/>
+<meta property="og:title" content="Re-envio de requisições HTTP em GO" />
+<meta property="og:description" content="Como fazer as requisições HTTTP serem re-enviadas automáticamente." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.byteverso.com/golang/tutoriais/go-http-inteligente/" /><meta property="article:section" content="golang" />
 
-<meta itemprop="name" content="Series">
-<meta itemprop="description" content="">
+
+
+<meta itemprop="name" content="Re-envio de requisições HTTP em GO">
+<meta itemprop="description" content="Como fazer as requisições HTTTP serem re-enviadas automáticamente.">
+
+<meta itemprop="wordCount" content="288">
+<meta itemprop="keywords" content="" />
   <meta property="og:image" content="https://www.byteverso.com/images/logo.png"/>
   <meta name="twitter:image" content="https://www.byteverso.com/images/logo.png"/>
-<link rel="alternate" type="application/rss+xml" href="https://www.byteverso.com/series/index.xml" title="BYTEVERSO" />
+
 <link data-precache rel="stylesheet" href="https://www.byteverso.com/assets/main/bundle.min.6a1e7b6a9fb773fee06c87f48e13c23c4442b1d6ca307d74877d9b68d9850962.css" integrity="sha256-ah57ap+3c/7gbIf0jhPCPERCsdbKMH10h32baNmFCWI=" crossorigin="anonymous">
 
     <link data-precache rel="stylesheet" href="https://www.byteverso.com/assets/viewer/bundle.min.eb914844636cd41f221f109e99c887bbc3b6b5ffb2af7c664b284cea2d1b54b7.css" integrity="sha256-65FIRGNs1B8iHxCemciHu8O2tf&#43;yr3xmSyhM6i0bVLc=" crossorigin="anonymous">
@@ -165,10 +170,100 @@
 <div class="col-xxl-8">
   <div class="container"><nav class="row card component" aria-label="breadcrumb">
   <div class="card-body pb-0">
-    <ol class="breadcrumb"><li class="breadcrumb-item text-surface"><a href="https://www.byteverso.com/">Home</a></li><li class="breadcrumb-item active">Series</li></ol>
+    <ol class="breadcrumb"><li class="breadcrumb-item text-surface"><a href="https://www.byteverso.com/">Home</a></li><li class="breadcrumb-item text-surface"><a href="https://www.byteverso.com/golang/">Golang</a></li><li class="breadcrumb-item text-surface"><a href="https://www.byteverso.com/golang/tutoriais/">Tutoriais</a></li><li class="breadcrumb-item active">Re-envio de requisições HTTP em GO</li></ol>
   </div>
-</nav><div class="taxonomys"></div><div class="row table-responsive mb-3"></div>
+</nav><div class="post-panel-wrapper position-relative d-flex justify-content-center">
+  <div class="d-flex flex-row justify-content-center rounded rounded-5 post-panel position-fixed px-3 py-1 surface shadow">
+    
+    
+
+    
+    
+    
+    
+    
+<a id="sidebarToggler" class="action action-sidebar-toggler d-none d-xxl-block" role="button" title="Sidebar toggler">
+  <i class="fas fa-fw fa-expand-alt" data-fa-transform="rotate-45"></i>
+</a>
+
+    
+  </div>
+</div><article class="row card component mb-4 post">
+  <div class="card-header ">
+    <h1 class="card-title post-title my-2">Re-envio de requisições HTTP em GO</h1>
+  </div>
+  <div class="card-body"><div class="post-meta mb-3">
+  <span class="post-date me-1 mb-1" title="created on 0001-01-01 00:53:28 &#43;0053 LMT.">January 1, 1</span><span class="post-reading-time me-1 mb-1">2 min read</span>
 </div>
+<div class="post-content mb-3" data-bs-spy="scroll" data-bs-target="#TableOfContents" tabindex="0">
+        <div id="post-content-body"><p>Em inúmeras situações as nossas requisições HTTP comunicam-se com API&rsquo;s que recebem um alto volume de tráfego, portanto ás vezes retornando respostas indesejadas, os famosos <code>5xx</code>.</p>
+<p>Felizmente existe uma biblioteca em Go feito pela Hashicorp chamada <code>go-retryablehttp</code> que pode nos ajudar, observe o exemplo abaixo <!-- raw HTML omitted -->👇<!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;log&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;time&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;github.com/hashicorp/go-retryablehttp&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Cria um novo http client
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">c</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">retryablehttp</span>.<span style="color:#a6e22e">NewClient</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Configura o client para 10 tentativas
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">RetryMax</span> = <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Configura o mínimo de tempo de espera
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">RetryWaitMin</span> = <span style="color:#ae81ff">1</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Second</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Configura o máximo tempo de espera
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">RetryWaitMax</span> = <span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Second</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">request</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">retryablehttp</span>.<span style="color:#a6e22e">NewRequest</span>(<span style="color:#e6db74">&#34;GET&#34;</span>, <span style="color:#e6db74">&#34;http://example.com&#34;</span>, <span style="color:#66d9ef">nil</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatalln</span>(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">resp</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Do</span>(<span style="color:#a6e22e">request</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatalln</span>(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Requisição retornada com status %d\n&#34;</span>, <span style="color:#a6e22e">resp</span>.<span style="color:#a6e22e">StatusCode</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>A biblioteca por sí só já tem funções padrões para gerenciar o <code>Backoff</code> porém você pode também passar funções customizadas para lidar com as respostas de erro.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Client</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">HTTPClient</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Client</span> <span style="color:#75715e">// Internal HTTP client.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">Logger</span>     <span style="color:#66d9ef">interface</span>{}  <span style="color:#75715e">// Customer logger instance. Can be either Logger or LeveledLogger
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">RetryWaitMin</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Duration</span> <span style="color:#75715e">// Minimum time to wait
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">RetryWaitMax</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Duration</span> <span style="color:#75715e">// Maximum time to wait
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">RetryMax</span>     <span style="color:#66d9ef">int</span>           <span style="color:#75715e">// Maximum number of retries
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// RequestLogHook allows a user-supplied function to be called
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// before each retry.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">RequestLogHook</span> <span style="color:#a6e22e">RequestLogHook</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ResponseLogHook allows a user-supplied function to be called
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// with the response from each HTTP request executed.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">ResponseLogHook</span> <span style="color:#a6e22e">ResponseLogHook</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// CheckRetry specifies the policy for handling retries, and is called
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// after each request. The default policy is DefaultRetryPolicy.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">CheckRetry</span> <span style="color:#a6e22e">CheckRetry</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Backoff specifies the policy for how long to wait between retries
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">Backoff</span> <span style="color:#a6e22e">Backoff</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ErrorHandler specifies the custom error handler to use, if any
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">ErrorHandler</span> <span style="color:#a6e22e">ErrorHandler</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">loggerInit</span> <span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">Once</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">clientInit</span> <span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">Once</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div>
+</div>
+</div></article></div>
 </div>
 <aside class="col-xxl-4 sidebar d-flex">
   <div class="container d-flex flex-column">
@@ -256,6 +351,7 @@
   <script defer src="https://www.byteverso.com/js/cookie.js"></script>
 </footer><script data-precache src="https://www.byteverso.com/assets/main/bundle.min.958e80c745791a590e72c08eff51fbd574bb1e3abe4ef7004b7b62f5e7589e3f.js" integrity="sha256-lY6Ax0V5GlkOcsCO/1H71XS7Hjq&#43;TvcAS3ti9edYnj8=" crossorigin="anonymous" async></script><script data-precache src="https://www.byteverso.com/assets/icons/bundle.min.93ee1ecf14575ba3c0cd03da0dbb864a0ee6971ac6134ef0ec79403ac89ed349.js" integrity="sha256-k&#43;4ezxRXW6PAzQPaDbuGSg7mlxrGE07w7HlAOsie00k=" crossorigin="anonymous" defer></script>
 <script data-precache src="https://www.byteverso.com/assets/viewer/bundle.min.e5a7213f2100ce0c5c22bd9f113527cd503672ffe57b00e9d6bf5f2abb0d86b2.js" integrity="sha256-5achPyEAzgxcIr2fETUnzVA2cv/lewDp1r9fKrsNhrI=" crossorigin="anonymous" defer></script><script data-precache defer src="https://www.byteverso.com/assets/algolia/bundle.min.86095fd181af5e625ceb2d0da0514b0b768da958b37ba5005050083f08e8e1b9.js" integrity="sha256-hglf0YGvXmJc6y0NoFFLC3aNqVize6UAUFAIPwjo4bk=" crossorigin="anonymous"></script>
+
 
   </body>
 </html>
