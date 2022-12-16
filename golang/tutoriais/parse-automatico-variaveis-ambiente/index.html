@@ -4,27 +4,27 @@
   <head><script src="https://www.byteverso.com/assets/init/bundle.min.e02a268a30bd13d88e7cc1414ffa650db250b18fa1902562c2ec4580a7d088b3.js" integrity="sha256-4ComijC9E9iOfMFBT/plDbJQsY&#43;hkCViwuxFgKfQiLM=" crossorigin="anonymous"></script>
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Re-envio de requisições HTTP em Go - BYTEVERSO</title>
+    <title>Configuração de serviços eficaz e rápida em Go - BYTEVERSO</title>
     <link rel="icon" href="https://www.byteverso.com/favicon_hub5539f71f6ca3f4d14bc6a344cab8163_16141_16x16_resize_box_3.png" sizes="16x16" type="image/png">
     <link rel="icon" href="https://www.byteverso.com/favicon_hub5539f71f6ca3f4d14bc6a344cab8163_16141_32x32_resize_box_3.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="https://www.byteverso.com/favicon_hub5539f71f6ca3f4d14bc6a344cab8163_16141_180x180_resize_box_3.png" sizes="180x180" type="image/png">
     <link rel="icon" href="https://www.byteverso.com/favicon_hub5539f71f6ca3f4d14bc6a344cab8163_16141_150x150_resize_box_3.png" sizes="150x150" type="image/png">
     <link rel="icon" href="https://www.byteverso.com/favicon_hub5539f71f6ca3f4d14bc6a344cab8163_16141_192x192_resize_box_3.png" sizes="192x192" type="image/png">
 <link rel="mask-icon" href="https://www.byteverso.com/safari-pinned-tab.svg" color="#6f42c1">
-<meta name="keywords" content="Go,, Golang,, HTTP,, request,, response,, reenvio,, programação,, cliente,, GET,, POST" />
-<meta name="description" content="Como fazer as requisições HTTTP serem re-enviadas automáticamente." /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Re-envio de requisições HTTP em Go"/>
-<meta name="twitter:description" content="Como fazer as requisições HTTTP serem re-enviadas automáticamente."/>
-<meta property="og:title" content="Re-envio de requisições HTTP em Go" />
-<meta property="og:description" content="Como fazer as requisições HTTTP serem re-enviadas automáticamente." />
+<meta name="keywords" content="Go,, Golang,go,, golang, env,, Variável,, environment,, configmap" />
+<meta name="description" content="Aprenda como definir uma configuração customizada para elevar o nível dos seus serviços." /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Configuração de serviços eficaz e rápida em Go"/>
+<meta name="twitter:description" content="Aprenda como definir uma configuração customizada para elevar o nível dos seus serviços."/>
+<meta property="og:title" content="Configuração de serviços eficaz e rápida em Go" />
+<meta property="og:description" content="Aprenda como definir uma configuração customizada para elevar o nível dos seus serviços." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.byteverso.com/golang/tutoriais/go-http-inteligente/" /><meta property="article:section" content="golang" />
+<meta property="og:url" content="https://www.byteverso.com/golang/tutoriais/parse-automatico-variaveis-ambiente/" /><meta property="article:section" content="golang" />
 
 
-<meta itemprop="name" content="Re-envio de requisições HTTP em Go">
-<meta itemprop="description" content="Como fazer as requisições HTTTP serem re-enviadas automáticamente.">
+<meta itemprop="name" content="Configuração de serviços eficaz e rápida em Go">
+<meta itemprop="description" content="Aprenda como definir uma configuração customizada para elevar o nível dos seus serviços.">
 
-<meta itemprop="wordCount" content="288">
+<meta itemprop="wordCount" content="373">
 <meta itemprop="keywords" content="" />
   <meta property="og:image" content="https://www.byteverso.com/images/logo.png"/>
   <meta name="twitter:image" content="https://www.byteverso.com/images/logo.png"/>
@@ -175,7 +175,7 @@
 <div class="col-xxl-8">
   <div class="container"><nav class="row card component" aria-label="breadcrumb">
   <div class="card-body pb-0">
-    <ol class="breadcrumb"><li class="breadcrumb-item text-surface"><a href="https://www.byteverso.com/">Home</a></li><li class="breadcrumb-item text-surface"><a href="https://www.byteverso.com/golang/">Golang</a></li><li class="breadcrumb-item text-surface"><a href="https://www.byteverso.com/golang/tutoriais/">Tutoriais</a></li><li class="breadcrumb-item active">Re-envio de requisições HTTP em Go</li></ol>
+    <ol class="breadcrumb"><li class="breadcrumb-item text-surface"><a href="https://www.byteverso.com/">Home</a></li><li class="breadcrumb-item text-surface"><a href="https://www.byteverso.com/golang/">Golang</a></li><li class="breadcrumb-item text-surface"><a href="https://www.byteverso.com/golang/tutoriais/">Tutoriais</a></li><li class="breadcrumb-item active">Configuração de serviços eficaz e rápida em Go</li></ol>
   </div>
 </nav><div class="post-panel-wrapper position-relative d-flex justify-content-center">
   <div class="d-flex flex-row justify-content-center rounded rounded-5 post-panel position-fixed px-3 py-1 surface shadow">
@@ -195,83 +195,112 @@
   </div>
 </div><article class="row card component mb-4 post">
   <div class="card-header ">
-    <h1 class="card-title post-title my-2">Re-envio de requisições HTTP em Go</h1>
+    <h1 class="card-title post-title my-2">Configuração de serviços eficaz e rápida em Go</h1>
   </div>
   <div class="card-body"><div class="post-meta mb-3">
   <span class="post-date me-1 mb-1" title="created on 0001-01-01 00:53:28 &#43;0053 LMT.">January 1, 1</span><span class="post-reading-time me-1 mb-1">2 min read</span>
 </div>
 <div class="post-content mb-3" data-bs-spy="scroll" data-bs-target="#TableOfContents" tabindex="0">
-        <div id="post-content-body"><p>Em inúmeras situações as nossas requisições HTTP comunicam-se com API&rsquo;s que recebem um alto volume de tráfego, portanto ás vezes retornando respostas indesejadas, os famosos <code>5xx</code>.</p>
-<p>Felizmente existe uma biblioteca em Go feito pela Hashicorp chamada <code>go-retryablehttp</code> que pode nos ajudar, observe o exemplo abaixo <!-- raw HTML omitted -->👇<!-- raw HTML omitted --></p>
+        <div id="post-content-body"><h2 id="por-quê" data-numberify>Por quê?<a class="anchor ms-1" href="#por-quê"></a></h2>
+<p>É muito vantajoso ser capaz de fácilmente configurar serviços em produção sem realizar alterações de código.</p>
+<p>Mas quais tipos de configuração? os parâmetros mais comuns a serem expostos são:</p>
+<ul>
+<li>Endereços de API</li>
+<li>Caminho de arquivos e diretórios do sistema operacional</li>
+<li>Nível de log (Error, Warning, Info, Debug)</li>
+<li>Timeouts de clientes HTTP e banco e dados</li>
+<li>TTL de cache (Time to Live)</li>
+<li>Número de workers</li>
+</ul>
+<p>Tendo em vista que nem todas as equipes possuem um processo de release simples, em que basta você fazer um commit para alterar o que está em produção, é bastante interessante  ter estas configurações &ldquo;expostas&rdquo; e <strong>não</strong> &ldquo;<strong>hard-coded</strong>&rdquo;, pois em momentos críticos podem ser crúciais na mitigação de incidentes.</p>
+<h2 id="usando-envconfig" data-numberify>Usando envconfig<a class="anchor ms-1" href="#usando-envconfig"></a></h2>
+<p><a href="https://github.com/kelseyhightower/envconfig" target="_blank" rel="noopener noreferrer">envconfig<i class="fas fa-external-link-square-alt ms-1"></i></a> é uma biblioteca criada por Kelsey Hightower para simplificar o carregamento de variáveis de ambiente, observe o exemplo a seguir.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;fmt&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;log&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;time&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;github.com/hashicorp/go-retryablehttp&#34;</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#34;log&#34;</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#34;time&#34;</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#34;github.com/kelseyhightower/envconfig&#34;</span>
 </span></span><span style="display:flex;"><span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Cria um novo http client
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">c</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">retryablehttp</span>.<span style="color:#a6e22e">NewClient</span>()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">appName</span> = <span style="color:#e6db74">&#34;EXEMPLO&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Configura o client para 10 tentativas
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">RetryMax</span> = <span style="color:#ae81ff">10</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Configura o mínimo de tempo de espera
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">RetryWaitMin</span> = <span style="color:#ae81ff">1</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Second</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Configura o máximo tempo de espera
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">RetryWaitMax</span> = <span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Second</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Config</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">LogLevel</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`default:&#34;info&#34;`</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Timeout</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Duration</span> <span style="color:#e6db74">`default:&#34;30s&#34;`</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Workers</span> <span style="color:#66d9ef">int</span> <span style="color:#e6db74">`required:&#34;true&#34;`</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">InstagramAPI</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`default: &#34;instagram.com/api&#34;`</span>
+</span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">request</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">retryablehttp</span>.<span style="color:#a6e22e">NewRequest</span>(<span style="color:#e6db74">&#34;GET&#34;</span>, <span style="color:#e6db74">&#34;http://example.com&#34;</span>, <span style="color:#66d9ef">nil</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">config</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Config</span>{}
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">envconfig</span>.<span style="color:#a6e22e">Process</span>(<span style="color:#a6e22e">appName</span>, <span style="color:#a6e22e">config</span>)
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatalln</span>(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatalln</span>(<span style="color:#e6db74">&#34;Erro ao carregar configuração&#34;</span>, <span style="color:#a6e22e">err</span>)
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">resp</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">Do</span>(<span style="color:#a6e22e">request</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatalln</span>(<span style="color:#a6e22e">err</span>)
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Requisição retornada com status %d\n&#34;</span>, <span style="color:#a6e22e">resp</span>.<span style="color:#a6e22e">StatusCode</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Iniciando a aplicação com as configurações\n%+v&#34;</span>, <span style="color:#a6e22e">config</span>)
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>A biblioteca por sí só já tem funções padrões para gerenciar o <code>Backoff</code> porém você pode também passar funções customizadas para lidar com as respostas de erro.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Client</span> <span style="color:#66d9ef">struct</span> {
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">HTTPClient</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Client</span> <span style="color:#75715e">// Internal HTTP client.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">Logger</span>     <span style="color:#66d9ef">interface</span>{}  <span style="color:#75715e">// Customer logger instance. Can be either Logger or LeveledLogger
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">RetryWaitMin</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Duration</span> <span style="color:#75715e">// Minimum time to wait
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">RetryWaitMax</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Duration</span> <span style="color:#75715e">// Maximum time to wait
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">RetryMax</span>     <span style="color:#66d9ef">int</span>           <span style="color:#75715e">// Maximum number of retries
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// RequestLogHook allows a user-supplied function to be called
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// before each retry.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">RequestLogHook</span> <span style="color:#a6e22e">RequestLogHook</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ResponseLogHook allows a user-supplied function to be called
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// with the response from each HTTP request executed.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">ResponseLogHook</span> <span style="color:#a6e22e">ResponseLogHook</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// CheckRetry specifies the policy for handling retries, and is called
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// after each request. The default policy is DefaultRetryPolicy.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">CheckRetry</span> <span style="color:#a6e22e">CheckRetry</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Backoff specifies the policy for how long to wait between retries
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">Backoff</span> <span style="color:#a6e22e">Backoff</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ErrorHandler specifies the custom error handler to use, if any
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">ErrorHandler</span> <span style="color:#a6e22e">ErrorHandler</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">loggerInit</span> <span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">Once</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">clientInit</span> <span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">Once</span>
-</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>E então você pode configurar sua aplicação usando variáveis de ambiente</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>EXEMPLO_WORKERS<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span> EXEMPLO_TIMEOUT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;40s&#34;</span> go run main.go
+</span></span></code></pre></div><h2 id="exemplo-utilizando-configmaps-no-kubernetes" data-numberify>Exemplo utilizando ConfigMaps no Kubernetes<a class="anchor ms-1" href="#exemplo-utilizando-configmaps-no-kubernetes"></a></h2>
+<p>Você pode definir um configmap com todas as variáveis de ambiente que você deseja configurar.</p>
+<blockquote>
+<p>Se você usar o exemplo de código acima seus Pods irão ficar em <code>CrashLoop</code>, pois o programa irá mostrar as configurações e finalizar. complemente o exemplo acima com um serviço backend real. Os manifests abaixo são apenas para lhe guiar em como carregar o configmap inteiro em variáveis de ambiente.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ConfigMap</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">exemplo-config</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">data</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">EXEMPLO_WORKERS</span>: <span style="color:#e6db74">&#34;3&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">EXEMPLO_TIMEOUT</span>: <span style="color:#e6db74">&#34;40s&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">EXEMPLO_LOG_LEVEL</span>: <span style="color:#e6db74">&#34;debug&#34;</span>
+</span></span></code></pre></div><p>E Então na especificação de variáveis de ambiente do seu pod:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">envFrom</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">configMapRef</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">exemplo-config</span>
+</span></span></code></pre></div><p>Exemplo completo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ConfigMap</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">exemplo-config</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">data</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">EXEMPLO_WORKERS</span>: <span style="color:#e6db74">&#34;3&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">EXEMPLO_TIMEOUT</span>: <span style="color:#e6db74">&#34;40s&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">EXEMPLO_LOG_LEVEL</span>: <span style="color:#e6db74">&#34;debug&#34;</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Deployment</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">exemplo-service</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">app</span>: <span style="color:#ae81ff">exemplo</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">replicas</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">selector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">app</span>: <span style="color:#ae81ff">exemplo</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">app</span>: <span style="color:#ae81ff">exemplo</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">exemplo-container</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">exemplo-service:latest</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">imagePullPolicy</span>: <span style="color:#ae81ff">Never</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">envFrom</span>:
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">configMapRef</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;exemplo-config&#34;</span> <span style="color:#75715e"># Referência do configmap</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">containerPort</span>: <span style="color:#ae81ff">80</span>
 </span></span></code></pre></div></div>
 </div>
 </div><div class="card-footer">
-  <div class="post-navs d-flex justify-content-evenly"><div class="post-nav post-next">
-      <a href="https://www.byteverso.com/golang/tutoriais/parse-automatico-variaveis-ambiente/">Configuração de serviços eficaz e rápida em Go</a>
-      <i class="fas fa-fw fa-chevron-down post-next-icon ms-1" data-fa-transform="rotate-270"></i>
+  <div class="post-navs d-flex justify-content-evenly"><div class="post-nav post-prev">
+      <i class="fas fa-fw fa-chevron-down post-prev-icon me-1" data-fa-transform="rotate-90"></i>
+      <a href="https://www.byteverso.com/golang/tutoriais/go-http-inteligente/">Re-envio de requisições HTTP em Go</a>
     </div></div>
 </div></article><section class="related-posts row card component">
     <div class="card-header">
@@ -279,14 +308,14 @@
     </div>
     <div class="card-body">
       <ul class="post-list list-unstyled"><li class="mb-3 border-bottom">
-          <a class="post-title" href="https://www.byteverso.com/golang/tutoriais/parse-automatico-variaveis-ambiente/">
-            Configuração de serviços eficaz e rápida em Go
+          <a class="post-title" href="https://www.byteverso.com/golang/tutoriais/go-http-inteligente/">
+            Re-envio de requisições HTTP em Go
           </a>
           <span class="post-meta post-date float-end">January 1, 1
 </span>
-          <div class="post-summary my-3"><p>Por quê? É muito vantajoso ser capaz de fácilmente configurar serviços em produção sem realizar alterações de código.
-Mas quais tipos de configuração? os parâmetros mais comuns a serem expostos são:
-Endereços de API Caminho de arquivos e diretórios do sistema operacional Nível de log (Error, Warning, Info, Debug)...</p><div><a class="btn btn-sm btn-outline-primary btn-read-more" href="https://www.byteverso.com/golang/tutoriais/parse-automatico-variaveis-ambiente/">Read More</a></div></div>
+          <div class="post-summary my-3"><p>Em inúmeras situações as nossas requisições HTTP comunicam-se com API’s que recebem um alto volume de tráfego, portanto ás vezes retornando respostas indesejadas, os famosos 5xx.
+Felizmente existe uma biblioteca em Go feito pela Hashicorp chamada go-retryablehttp que pode nos ajudar, observe o exemplo abaixo 👇
+package...</p><div><a class="btn btn-sm btn-outline-primary btn-read-more" href="https://www.byteverso.com/golang/tutoriais/go-http-inteligente/">Read More</a></div></div>
         </li></ul>
     </div>
   </section></div>
