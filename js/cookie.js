@@ -1,5 +1,6 @@
 var cc = initCookieConsent();
 
+console.log("vai porra")
 
 function loadScriptAsync(scriptSrc, callback) {
     if (typeof callback !== 'function') {
@@ -37,9 +38,10 @@ cc.run({
     },
 
     onAccept: function (cookie) {
-        if(cookie.categories.length === 1 && cookie.categories[0] === "necessary" ){
-            return;
-        }
+        console.log("nunca veio")
+        // if(cookie.categories.length === 1 && cookie.categories[0] === "necessary" ){
+        //     return;
+        // }
 
         loadScriptAsync('https://www.googletagmanager.com/gtag/js?id=G-68ZDB9CLY9', function () {
             window.dataLayer = window.dataLayer || [];
@@ -131,6 +133,8 @@ cc.run({
         }
     }
 });
+
+console.log("passou ja")
 
 
 //if (!cookieconsent.validCookie('_gid')) {
